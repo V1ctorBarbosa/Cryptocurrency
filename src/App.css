@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:ital,wght@0,400;1,100;1,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.video{
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.Search {
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.coin-text {
+  padding: 1rem;
+}
+
+.coin-input {
+  padding: 1rem;
+  font-size: 22px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-coins {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-height: 875px) {
+
+  .Search {
+    padding: 1rem;
+  }
+
+  .coin-text {
+    padding: 1rem;
+  }
+
+  .coin-input {
+    padding: .5rem;
+  }
+
+}

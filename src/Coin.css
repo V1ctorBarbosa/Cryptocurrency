@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100;1,600&display=swap');
+
+
+.coin-container {
+    display: flex;
+    border: solid 2px;
+    border-radius: 16px;
+    width: 400px;
+    margin: 120px auto;
+    background-color: #213031;   
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.151);
+
+    background-size: 56px 56px;
+    background-image:
+    linear-gradient(
+        135deg,
+        transparent 55%,
+        #213031 55%
+    ),
+     radial-gradient(
+        transparent 6px,
+        #ffffff1a 6px,
+        #ffffff1a 10px,
+        transparent 10px,
+        transparent 15px,
+        #ffffff1a 15px,
+        #ffffff1a 19px,
+        transparent 19px,
+        transparent 24px,
+        #ffffff1a 24px,
+        #ffffff1a 28px,
+        transparent 28px
+    );
+}
+
+.coin-row {
+    display: flex;
+    flex-direction: column;
+    margin: auto ;
+}
+
+.coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #fab003;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+}
+
+.coin img {
+    width: 100px;
+    height: 100px;
+}
+
+.coin-symbol {
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.coin-data {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    font-size: 20px;
+    color: #fab003;
+    width: 350px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.coin-data>* {
+    padding: 1rem;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+.red {
+    color: #f00606;
+}
+
+.green {
+    color: #11d811;
+}
+
+@media (max-height: 875px) {
+
+    .coin-row {
+        flex-direction: row;
+    }
+
+    .coin{ 
+        border-radius: 20px;
+    }
+
+}
