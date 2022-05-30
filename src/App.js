@@ -10,10 +10,10 @@ function App() {
   const [search, setSearch] = useState("")
 
   useEffect(() => {
-    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=120&page=1&sparkline=false') //aqui usamos o link do site e o AXIOS para pegar os dados
+    axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=120&page=1&sparkline=false') 
       .then((res => {
-        setCoins(res.data); // aqui temos essa arrow function que começa com o método .the, que quer dizer "Pegue os dados (na linha de cima) e ENTÃO, vamos usar a função do useState para request some data"
-      })).catch(error => console.log(error)) // aqui, estamos simplesmente falando "Se por acaso o sistema pegar (catch) algum erro, console.log nele"
+        setCoins(res.data); 
+      })).catch(error => console.log(error)) 
   }, [])
 
   const handleChange = e => {
