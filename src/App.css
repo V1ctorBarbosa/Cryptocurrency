@@ -60,5 +60,16 @@
   .coin-input {
     padding: .5rem;
   }
-
 }
+
+@media (max-width: 425px) {
+  
+  .Search {
+    padding: .2rem;
+  }
+
+  .coin-text {
+    padding: .1rem;
+  }
+
+} 

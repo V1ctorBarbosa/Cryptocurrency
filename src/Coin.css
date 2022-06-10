@@ -6,7 +6,7 @@
     border: solid 2px;
     border-radius: 16px;
     width: 400px;
-    margin: 120px auto;
+    margin: 100px auto 500px;
     background-color: #213031;   
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.151);
 
@@ -83,7 +83,7 @@
     color: #11d811;
 }
 
-@media (max-height: 875px) {
+@media (max-height: 900px) {
 
     .coin-row {
         flex-direction: row;
@@ -94,3 +94,10 @@
     }
 
 }
+
+@media (max-width: 425px) {
+    .coin-container { 
+        width: 300px;
+    }
+} 
+
